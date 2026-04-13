@@ -1,0 +1,511 @@
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Claims Consultancy | Canada's Construction Claims Experts</title>
+    <meta name="description"
+        content="Canadian construction claims specialists. Delay, disruption, EOT, variations, quantum & expert witness services. Coast-to-coast.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        canada: {
+                            red: '#D80621',
+                            'red-dark': '#A5031A',
+                            'red-light': '#FFF1F3'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Manrope', 'Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'red': '0 10px 30px -10px rgba(216,6,33,0.4)',
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.1)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .maple {
+            clip-path: polygon(50% 0%, 61% 22%, 83% 18%, 78% 34%, 100% 40%, 85% 56%, 92% 78%, 70% 70%, 62% 100%, 50% 82%, 38% 100%, 30% 70%, 8% 78%, 15% 56%, 0% 40%, 22% 34%, 17% 18%, 39% 22%);
+        }
+
+        .flag-border::before,
+        .flag-border::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 8px;
+            background: #D80621;
+        }
+
+        .flag-border::before {
+            left: 0;
+        }
+
+        .flag-border::after {
+            right: 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .7s cubic-bezier(.2, .8, .2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-slate-800 bg-white">
+    <!-- Top Bar -->
+    <div class="bg-canada-red text-white text-[13px]">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2.04c-.64 1.52-1.45 3.01-2.3 4.27-.47.7-1.15 1.23-1.93 1.53l-1.7.65 1.04 1.45c.36.5.6 1.07.7 1.68l.23 1.4-1.32-.5c-.58-.22-1.2-.3-1.82-.23l-1.77.2 1.07 1.42c.76 1.01 1.73 1.84 2.85 2.43l1.27.67-.72 1.25c-.32.55-.53 1.15-.62 1.78l-.25 1.78 1.6-.81c1.14-.58 2.4-.88 3.67-.88s2.53.3 3.67.88l1.6.81-.25-1.78a5.6 5.6 0 0 0-.62-1.78l-.72-1.25 1.27-.67c1.12-.59 2.09-1.42 2.85-2.43l1.07-1.42-1.77-.2c-.62-.07-1.24.01-1.82.23l-1.32.5.23-1.4c.1-.61.34-1.18.7-1.68l1.04-1.45-1.7-.65c-.78-.3-1.46-.83-1.93-1.53-.85-1.26-1.66-2.75-2.3-4.27z" />
+                </svg>
+                <span class="font-medium tracking-wide">PROUDLY CANADIAN • COAST TO COAST</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="tel:+14165550123" class="hover:underline">Toronto: (416) 555-0123</a>
+                <a href="tel:+16045550123" class="hover:underline">Vancouver: (604) 555-0123</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="navbar" class="sticky top-0 z-50 bg-white/90 glass border-b border-slate-100 transition-shadow">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-16 h-13 rounded-sm flex items-center justify-center">
+                    <img src="CCC.png" alt="logo">
+                </div>
+                <div class="leading-[1.1]">
+                    <div class="font-display font-extrabold text-[13px] tracking-tight text-slate-900">CONSTRUCTION <br>
+                        CLAIMS <br> CONSULTANCY</div>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium">
+                <a href="about.html" class="hover:text-canada-red transition">About</a>
+                <a href="#services" class="hover:text-canada-red transition">Services</a>
+                <a href="#expertise" class="hover:text-canada-red transition">Expertise</a>
+                <a href="#process" class="hover:text-canada-red transition">Process</a>
+                <a href="#results" class="hover:text-canada-red transition">Results</a>
+                <a href="contact.html" class="hover:text-canada-red transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#contact"
+                    class="hidden sm:inline-flex items-center justify-center h-10 px-5 bg-canada-red text-white text-[14px] font-semibold rounded-sm hover:bg-canada-red-dark transition shadow-red">Free
+                    Consultation</a>
+                <button id="menuBtn"
+                    class="lg:hidden w-10 h-10 grid place-items-center border border-slate-200 rounded-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden border-t border-slate-100 bg-white">
+            <div class="px-4 py-4 grid gap-3 text-[15px] font-medium">
+                <a href="#services" class="py-2">Services</a>
+                <a href="#expertise" class="py-2">Expertise</a>
+                <a href="#process" class="py-2">Process</a>
+                <a href="#results" class="py-2">Results</a>
+                <a href="#contact" class="py-2 text-canada-red font-semibold">Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top CTA -->
+    <section>
+        <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+            <img src="https://www.shutterstock.com/image-photo/business-people-working-office-consulting-600nw-2153969665.jpg"
+                alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center" />
+
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-red-600/80 via-black/40 to-transparent"></div>
+            
+            <div aria-hidden="true"
+                class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
+            </div>
+            <div aria-hidden="true"
+                class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:-top-112 sm:ml-16 sm:translate-x-0">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Work with us</h2>
+                    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">Anim aute id magna aliqua
+                        ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+                        occaecat fugiat.</p>
+                </div>
+                <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                    <div
+                        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                        <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="py-24 bg-white">
+    
+    <!-- Heading -->
+    <div class="text-center mb-16 fade-in">
+        <div class="inline-block px-4 py-1 bg-canada-red-light text-canada-red rounded-full text-sm mb-4">
+        OUR TEAM
+        </div>
+        <h2 class="text-5xl font-bold font-display tracking-tight">Meet Our Experts</h2>
+        <p class="text-gray-600 mt-4 max-w-md mx-auto">
+        Professionals with years of experience delivering results.
+        </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-4 gap-2 max-w-[90rem] mx-auto px-6 h-[430px]">
+        
+        <!-- CARD -->
+        <div onclick="openModal(0)" class="fade-in group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-red transition duration-500 cursor-pointer">
+            <!-- Image -->
+            <div class="relative h-100 overflow-hidden font-bold font-display tracking-tight">
+                <img src="https://construction-claims-consu-1pt1.arcada.app/images/team1.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <!-- DARK GRADIENT OVERLAY -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+                <!-- TEXT ON IMAGE -->
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                <!-- Name -->
+                <h3 class="text-3xl font-bold text-white leading-tight">Shahab Mahmood</h3>
+                <!-- Role -->
+                <p class="text-canada-red font-medium">Managing Director - Contracts & Claims</p>
+                <!-- Short Description -->
+                <p class="text-gray-200 text-sm mt-2 opacity-70 group-hover:opacity-100 translate-y-0 transition duration-500">35+ years experience in FIDIC contracts, claims management, delay analysis, and arbitration support.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPY FOR OTHERS -->
+        <div onclick="openModal(1)" class="fade-in group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-red transition duration-500 cursor-pointer">
+            <!-- Image -->
+            <div class="relative h-100 overflow-hidden font-bold font-display tracking-tight">
+                <img src="https://construction-claims-consu-1pt1.arcada.app/images/team3.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <!-- DARK GRADIENT OVERLAY -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+                <!-- TEXT ON IMAGE -->
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                <!-- Name -->
+                <h3 class="text-3xl font-bold text-white leading-tight">Muhammad Asghar</h3>
+                <!-- Role -->
+                <p class="text-canada-red font-medium">Director - Contract & Delay Analysis</p>
+                <!-- Short Description -->
+                <p class="text-gray-200 text-sm mt-2 opacity-70 group-hover:opacity-100 translate-y-0 transition duration-500">Expert in forensic delay analysis, EOT claims, structural projects, and construction planning with 26+ years experience.</p>
+                </div>
+            </div>
+        </div>
+                
+        <!-- CARD -->
+        <div onclick="openModal(2)" class="fade-in group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-red transition duration-500 cursor-pointer">
+            <!-- Image -->
+            <div class="relative h-100 overflow-hidden font-bold font-display tracking-tight">
+                <img src="data:image/jpeg;base64,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" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <!-- DARK GRADIENT OVERLAY -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+                <!-- TEXT ON IMAGE -->
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                <!-- Name -->
+                <h3 class="text-3xl font-bold text-white leading-tight">Jawwad Waheed</h3>
+                <!-- Role -->
+                <p class="text-canada-red font-medium">Director - Contract & Claims</p>
+                <!-- Short Description -->
+                <p class="text-gray-200 text-sm mt-2 opacity-70 group-hover:opacity-100 translate-y-0 transition duration-500">27+ years international experience in infrastructure projects, delay claims, arbitration, and contract advisory.
+                </div>
+            </div>
+        </div>
+                
+        <!-- CARD -->
+        <div onclick="openModal(3)" class="fade-in group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-red transition duration-500 cursor-pointer">
+            <!-- Image -->
+            <div class="relative h-100 overflow-hidden font-bold font-display tracking-tight">
+                <img src="https://savilerowco.com/cdn/shop/files/navy-wool-blend-suit-jacket-mfj379dnv-suit-model-1.jpg?crop=center&height=3390&v=1748345195&width=2760" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <!-- DARK GRADIENT OVERLAY -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+                <!-- TEXT ON IMAGE -->
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                <!-- Name -->
+                <h3 class="text-3xl font-bold text-white leading-tight">Ali Sufian Syed</h3>
+                <!-- Role -->
+                <p class="text-canada-red font-medium">Director - Contract & Claims</p>
+                <!-- Short Description -->
+                <p class="text-gray-200 text-sm mt-2 opacity-70 group-hover:opacity-100 translate-y-0 transition duration-500">22+ years experience in commercial management, delay & quantum claims, and international infrastructure projects.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+    <div id="modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 overflow-y-auto p-4">
+        
+            <div id="modalBox" class="bg-white w-[95%] md:w-[800px] lg:w-[1000px] max-h-[90vh] rounded-xl p-6 overflow-hidden transform scale-90 opacity-0 transition duration-300">
+            
+            <button onclick="closeModal()" class="absolute top-4 right-4 bg-white/80 hover:bg-canada-red hover:text-white transition px-3 py-1 rounded-full">✕</button>
+
+            <img id="modalImg" class="w-full h-60 md:h-72 object-cover rounded-xl">
+
+            <div class="p-3">
+                <h3 id="modalName" class="text-3xl font-bold"></h3>
+                <p id="modalRole" class="text-canada-red"></p>
+                <div id="modalFull" class="mt-4 text-gray-600 leading-relaxed max-h-[40vh] overflow-y-auto pr-2"></div>
+            </div>
+
+        </div>
+        </div>
+    <script>
+    const team = [
+        {name:"Shahab Mahmood",role:"Managing Director - Contracts & Claims",img:"https://construction-claims-consu-1pt1.arcada.app/images/team1.jpg",full:`
+        Shahab Mahmood is a Managing Director of Contracts & Claims and a highly experienced Contracts and Claims Specialist with over 35 years of expertise in managing complex contractual and claims-related matters within the construction industry. He is adept at interpreting contract provisions, assessing contractors’ entitlements, and effectively administering claims and variation processes. With extensive experience on projects governed by FIDIC Conditions of Contract (1987 and 1999), he possesses strong knowledge of international standard forms and has developed robust strategies to mitigate risks and proactively prevent contractor claims.
+        <br><br>He is a highly qualified Civil Engineer holding an MSc from the (AIT), Bangkok, Thailand, and an LLM in Construction Law & Arbitration from the United Kingdom. He is a Fellow of the Chartered Institute of Arbitrators (FCIArb), UK. He specializes in forensic delay analysis and dispute resolution support, with extensive expertise in Time Impact Analysis (TIA) and As-Built-But-For (ABBF) methodologies. His work includes the preparation of detailed, well-reasoned delay analysis reports addressing excusable delays, concurrency and pacing, in line with contractual frameworks and best international practices. He is proficient in using Primavera P6 for advanced schedule analysis, including baseline development, progress tracking, and critical path assessment. Leveraging these tools, he evaluates delay impacts and provides robust, evidence-based support for Extension of Time (EOT) claims, delivering clear, defensible, and technically sound outcomes for complex construction disputes.
+        <br><br>Shahab also brings experience in project monitoring, identifying bottlenecks, and supporting timely project delivery. His expertise extends to tender documentation, evaluation, and a wide range of contract forms including FIDIC, World Bank, JCT, ICE, and NEC. He has supported clients globally in claims management and dispute resolution, working alongside legal teams in ADR and arbitration proceedings.
+        `},
+
+        {name:"Muhammad Asghar",role:"Director - Contract & Delay Analysis",img:"https://construction-claims-consu-1pt1.arcada.app/images/team3.jpg",full:`
+        Muhammad Asghar is a Director of Contract & Delay Analyst with over 26 years of experience in structural design, construction strategies, project execution, planning, and contract management. He has a proven track record of delivering projects from concept to completion across dams, infrastructure, buildings, and highways. His expertise includes forensic delay analysis, Extension of Time (EOT) assessments, and cost claims evaluation, combining strong technical and contractual knowledge.
+        <br><br>He holds qualifications in Civil Engineering and an LLM in Construction Law & Arbitration and is a Member of the Chartered Institute of Arbitrators (MCIArb), UK, as well as a certified Project Management Professional (PMP). As a key member of the management team, he contributes to the development and implementation of effective project strategies, ensuring successful and timely project delivery. He is recognized for his strong leadership, mentoring capabilities, and collaborative approach, working seamlessly with multidisciplinary teams. He brings extensive international experience in claims management and dispute resolution, supporting clients alongside specialized experts, owners, developers, and contractors to achieve practical and commercially sound outcomes.
+        `},
+
+        {name:"Jawwad Waheed",role:"Director - Contract & Claims",img:"data:image/jpeg;base64,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",full:`
+        Jawwad brings is a Director of Contract & Claims with over 27 years of extensive international experience across the Middle East, South Asia, and North America in on-site construction management. His expertise spans civil infrastructure, heavy civil works, airport construction and expansion, power plants, hotels, energy projects, and municipal infrastructure.
+        <br><br>He holds a bachelor’s degree in Civil Engineering and an LLM in Construction Law and Arbitration. Jawwad is a Fellow of the Chartered Institute of Arbitrators (FCIArb, UK) and a licensed Professional Engineer (P,Eng) in Alberta, Canada. Throughout his career, he has developed significant expertise as a Claim’s Consultant, specializing in the preparation of construction delay and disruption claims, expert reports, and executive summaries. He also provides strategic contract advisory services to owners, contractors, and legal counsel on complex, multi-disciplinary projects involving civil, architectural, mechanical, and electrical works. 
+        <br><br>Jawwad has been actively engaged in claims management and dispute resolution services, working in collaboration with a global network of specialists. He supports developers, contractors, and legal teams in ADR processes and arbitration, delivering well-structured, technically sound, and legally robust solutions.
+        `},
+
+        {name:"Ali Sufian Syed",role:"Director - Contract & Claims",img:"https://savilerowco.com/cdn/shop/files/navy-wool-blend-suit-jacket-mfj379dnv-suit-model-1.jpg?crop=center&height=3390&v=1748345195&width=2760",full:`
+        Ali Sufian Syed is a Director of Contract & Claims with over 22 years of international experience advising on high-value construction and infrastructure projects. He specializes in the commercial management of complex claims, including delay, disruption, and quantum, with a strong focus on protecting project value and mitigating financial risk. Ali has led the preparation, defense, and negotiation of claims on multibillion-dollar projects across the Middle East and Canada, supporting owners, developers, and contractors in resolving disputes efficiently and strategically. His work directly contributes to maximizing entitlements, reducing exposure, and strengthening contractual positions in both live projects and formal dispute settings.
+        <br><br>He holds a Bachelor’s degree in Electrical Engineering and is a licensed Professional Engineer (P.Eng.) in Ontario, Canada. He brings extensive expertise in forensic schedule analysis, cost substantiation, and contract interpretation, and has supported legal counsel in arbitration and ADR proceedings by delivering clear, evidence-based narratives that withstand rigorous scrutiny. His approach is structured, commercially focused, and geared toward achieving timely, robust, and defensible outcomes.
+        <br><br>Ali works closely with multidisciplinary and international teams, leveraging global best practices to deliver consistent results across diverse regulatory and contractual environments. His ability to translate complex technical issues into commercially actionable strategies makes him a trusted advisor in high-pressure project scenarios.
+        `}
+    ];
+
+    function openModal(i){
+    const modal = document.getElementById("modal");
+    const box = document.getElementById("modalBox");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    document.getElementById("modalImg").src = team[i].img;
+    document.getElementById("modalName").innerHTML = team[i].name;
+    document.getElementById("modalRole").innerHTML = team[i].role;
+    document.getElementById("modalFull").innerHTML = team[i].full;
+
+    setTimeout(()=>{
+        box.classList.remove("scale-90","opacity-0");
+        box.classList.add("scale-100","opacity-100");
+    },50);
+    }
+
+    function closeModal(){
+    const modal = document.getElementById("modal");
+    const box = document.getElementById("modalBox");
+
+    box.classList.add("scale-90","opacity-0");
+    box.classList.remove("scale-100","opacity-100");
+
+    setTimeout(()=>{
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    },200);
+    }
+
+    document.getElementById("modal").addEventListener("click",(e)=>{
+    if(e.target.id==="modal") closeModal();
+    });
+
+
+    // SCROLL ANIMATION (fade-in)
+    const bserver = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        }
+    });
+    });
+
+    document.querySelectorAll(".fade-in").forEach(el=>{
+        bserver.observe(el);
+    });
+    </script>
+
+    <!-- CTA -->
+    <section class="py-16 bg-canada-red relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: repeating-linear-gradient(45deg, white 0 2px, transparent 2px 20px)"></div>
+        <div class="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 relative text-center text-white">
+            <h2 class="font-display text-[32px] lg:text-[42px] font-extrabold leading-tight">Think you have a claim?
+                Let's talk today.</h2>
+            <p class="mt-3 text-white/90 max-w-[600px] mx-auto">First 30-minute consultation is free and 100%
+                confidential. Bring your contract and schedule.</p>
+            <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="contact.html"
+                    class="h-12 px-8 inline-flex items-center justify-center bg-white text-canada-red font-semibold rounded-sm hover:bg-slate-100">Book
+                    Now</a>
+                <a href="tel:+14165550123"
+                    class="h-12 px-8 inline-flex items-center justify-center border-2 border-white text-white font-semibold rounded-sm hover:bg-white hover:text-canada-red">Call
+                    (416) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-200 border-t-4 border-canada-red">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div>
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-16 h-13 rounded-sm flex items-center justify-center">
+                            <img src="CCC.png" alt="logo">
+                        </div>
+                        <div class="leading-[1.1]">
+                            <div class="font-display font-extrabold text-[13px] tracking-tight text-white">CONSTRUCTION
+                                <br> CLAIMS <br> CONSULTANCY</div>
+                        </div>
+                    </a>
+                    <p class="mt-3 text-[14px] max-w-[340px]">Independent Canadian experts in construction claims,
+                        disputes and expert witness services since 1997.</p>
+                </div>
+                <div class="text-[14px]">
+                    <div class="font-semibold text-white mb-2">Quick Links</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-1.5">
+                        <a href="#services" class="hover:text-white">Services</a>
+                        <a href="#process" class="hover:text-white">Process</a>
+                        <a href="#expertise" class="hover:text-white">Expertise</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-white/9 flex flex-col sm:flex-row justify-between gap-4 text-[13px]">
+                <div>© 2025 Construction Claims Consultancy Inc. All rights reserved.
+                </div>
+                <div class="flex gap-4"><a href="#" class="hover:text-white">Privacy</a><a href="#"
+                        class="hover:text-white">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast"
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-5 py-3 rounded-sm shadow-lg opacity-0 pointer-events-none transition-all text-[14px] z-50">
+        PDF sent! Check your email.</div>
+
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Navbar shadow
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) navbar.classList.add('shadow-sm'); else navbar.classList.remove('shadow-sm');
+        });
+
+        // Fade in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Counters
+        document.querySelectorAll('[data-count]').forEach(el => {
+            const target = +el.getAttribute('data-count');
+            let current = 0;
+            const inc = target / 60;
+            const timer = setInterval(() => {
+                current += inc;
+                if (current >= target) { el.textContent = target; clearInterval(timer); }
+                else el.textContent = Math.floor(current);
+            }, 30);
+        });
+
+        // Testimonials
+        const testimonials = [
+            { q: "Highly professional team with deep knowledge of international construction contracts. Their proactive approach helped us avoid costly disputes.", n: "Mark Tremblay", t: "VP Operations, Eastern Contractors Inc.", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80" },
+            { q: "Their detailed forensic delay analysis and clear reporting made a significant difference in our project. Strongly recommended for claims consultancy services.", n: "Sarah Chen", t: "Project Director, West Coast Build", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80" },
+            { q: "Excellent advisory services in dispute resolution and contract management. CCC delivered practical and effective solutions throughout the project lifecycle.", n: "David Okafor", t: "President, Northern Infrastructure", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80" }
+        ];
+        let ti = 0;
+        const tEl = document.getElementById('testimonial');
+        function renderTest() {
+            const t = testimonials[ti];
+            tEl.innerHTML = `<div class="flex gap-1 text-amber-500 mb-4"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><blockquote class="text-[20px] leading-relaxed font-medium text-slate-800">"${t.q}"</blockquote><div class="mt-6 flex items-center gap-3"><img src="${t.img}" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold">${t.n}</div><div class="text-[13px] text-slate-600">${t.t}</div></div></div>`;
+        }
+        function nextTest() { ti = (ti + 1) % testimonials.length; renderTest(); }
+        function prevTest() { ti = (ti - 1 + testimonials.length) % testimonials.length; renderTest(); }
+        setInterval(nextTest, 7000);
+
+        // Form
+        document.getElementById('claimForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            toast('Thank you! A senior claims consultant will call within 24 hours.');
+            e.target.reset();
+        });
+
+        // Toast
+        function toast(msg = 'PDF sent! Check your email.') {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.style.opacity = '1';
+            t.style.pointerEvents = 'auto';
+            t.style.transform = 'translate(-50%, -10px)';
+            setTimeout(() => {
+                t.style.opacity = '0';
+                t.style.pointerEvents = 'none';
+                t.style.transform = 'translate(-50%, 0)';
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

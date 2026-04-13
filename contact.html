@@ -1,0 +1,336 @@
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Claims Consultancy | Canada's Construction Claims Experts</title>
+    <meta name="description"
+        content="Canadian construction claims specialists. Delay, disruption, EOT, variations, quantum & expert witness services. Coast-to-coast.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        canada: {
+                            red: '#D80621',
+                            'red-dark': '#A5031A',
+                            'red-light': '#FFF1F3'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Manrope', 'Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'red': '0 10px 30px -10px rgba(216,6,33,0.4)',
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.1)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .maple {
+            clip-path: polygon(50% 0%, 61% 22%, 83% 18%, 78% 34%, 100% 40%, 85% 56%, 92% 78%, 70% 70%, 62% 100%, 50% 82%, 38% 100%, 30% 70%, 8% 78%, 15% 56%, 0% 40%, 22% 34%, 17% 18%, 39% 22%);
+        }
+
+        .flag-border::before,
+        .flag-border::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 8px;
+            background: #D80621;
+        }
+
+        .flag-border::before {
+            left: 0;
+        }
+
+        .flag-border::after {
+            right: 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .7s cubic-bezier(.2, .8, .2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-slate-800 bg-white">
+    <!-- Top Bar -->
+    <div class="bg-canada-red text-white text-[13px]">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2.04c-.64 1.52-1.45 3.01-2.3 4.27-.47.7-1.15 1.23-1.93 1.53l-1.7.65 1.04 1.45c.36.5.6 1.07.7 1.68l.23 1.4-1.32-.5c-.58-.22-1.2-.3-1.82-.23l-1.77.2 1.07 1.42c.76 1.01 1.73 1.84 2.85 2.43l1.27.67-.72 1.25c-.32.55-.53 1.15-.62 1.78l-.25 1.78 1.6-.81c1.14-.58 2.4-.88 3.67-.88s2.53.3 3.67.88l1.6.81-.25-1.78a5.6 5.6 0 0 0-.62-1.78l-.72-1.25 1.27-.67c1.12-.59 2.09-1.42 2.85-2.43l1.07-1.42-1.77-.2c-.62-.07-1.24.01-1.82.23l-1.32.5.23-1.4c.1-.61.34-1.18.7-1.68l1.04-1.45-1.7-.65c-.78-.3-1.46-.83-1.93-1.53-.85-1.26-1.66-2.75-2.3-4.27z" />
+                </svg>
+                <span class="font-medium tracking-wide">PROUDLY CANADIAN • COAST TO COAST</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="tel:+14165550123" class="hover:underline">Toronto: (416) 555-0123</a>
+                <a href="tel:+16045550123" class="hover:underline">Vancouver: (604) 555-0123</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="navbar" class="sticky top-0 z-50 bg-white/90 glass border-b border-slate-100 transition-shadow">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-16 h-13 rounded-sm flex items-center justify-center">
+                    <img src="CCC.png" alt="logo">
+                </div>
+                <div class="leading-[1.1]">
+                    <div class="font-display font-extrabold text-[13px] tracking-tight text-slate-900">CONSTRUCTION <br> CLAIMS <br> CONSULTANCY</div>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium">
+                <a href="#services" class="hover:text-canada-red transition">Services</a>
+                <a href="#expertise" class="hover:text-canada-red transition">Expertise</a>
+                <a href="#process" class="hover:text-canada-red transition">Process</a>
+                <a href="#results" class="hover:text-canada-red transition">Results</a>
+                <a href="contact.html" class="hover:text-canada-red transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#contact"
+                    class="hidden sm:inline-flex items-center justify-center h-10 px-5 bg-canada-red text-white text-[14px] font-semibold rounded-sm hover:bg-canada-red-dark transition shadow-red">Free
+                    Consultation</a>
+                <button id="menuBtn"
+                    class="lg:hidden w-10 h-10 grid place-items-center border border-slate-200 rounded-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden border-t border-slate-100 bg-white">
+            <div class="px-4 py-4 grid gap-3 text-[15px] font-medium">
+                <a href="#services" class="py-2">Services</a>
+                <a href="#expertise" class="py-2">Expertise</a>
+                <a href="#process" class="py-2">Process</a>
+                <a href="#results" class="py-2">Results</a>
+                <a href="#contact" class="py-2 text-canada-red font-semibold">Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 lg:py-28">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5">
+                    <div class="text-[12px] font-bold tracking-[0.2em] text-canada-red mb-3">CONTACT</div>
+                    <h2 class="font-display text-[34px] leading-tight font-extrabold">Get your claim assessed</h2>
+                    <p class="mt-3 text-slate-600">Offices in Toronto, Calgary, Vancouver & Halifax. We travel to site
+                        anywhere in Canada.</p>
+                    <div class="mt-8 space-y-5 text-[15px]">
+                        <div class="flex gap-3"><svg class="w-5 h-5 text-canada-red mt-0.5" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <div><strong>Toronto HQ</strong><br>200 University Ave, Suite 1100<br>Toronto, ON M5H 3C6
+                            </div>
+                        </div>
+                        <div class="flex gap-3"><svg class="w-5 h-5 text-canada-red mt-0.5" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div><strong>Email</strong><br>claims@constructionclaims.ca</div>
+                        </div>
+                        <div class="flex gap-3"><svg class="w-5 h-5 text-canada-red mt-0.5" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div><strong>Hours</strong><br>Mon-Fri 7am-7pm ET • Emergency on-call</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <form id="claimForm" class="bg-white border border-slate-200 rounded-sm p-8 shadow-soft">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div><label class="text-[13px] font-medium">Full Name *</label><input required
+                                    class="mt-1.5 w-full h-11 px-3 border border-slate-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-canada-red/30 focus:border-canada-red"
+                                    type="text"></div>
+                            <div><label class="text-[13px] font-medium">Company *</label><input required
+                                    class="mt-1.5 w-full h-11 px-3 border border-slate-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-canada-red/30 focus:border-canada-red"
+                                    type="text"></div>
+                            <div><label class="text-[13px] font-medium">Email *</label><input required
+                                    class="mt-1.5 w-full h-11 px-3 border border-slate-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-canada-red/30 focus:border-canada-red"
+                                    type="email"></div>
+                            <div><label class="text-[13px] font-medium">Phone</label><input
+                                    class="mt-1.5 w-full h-11 px-3 border border-slate-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-canada-red/30 focus:border-canada-red"
+                                    type="tel"></div>
+                            <div class="sm:col-span-2"><label class="text-[13px] font-medium">Project
+                                    Value</label><select
+                                    class="mt-1.5 w-full h-11 px-3 border border-slate-300 rounded-sm bg-white focus:outline-none focus:ring-2 focus:ring-canada-red/30">
+                                    <option>Under $1M</option>
+                                    <option>$1M - $5M</option>
+                                    <option>$5M - $25M</option>
+                                    <option>$25M - $100M</option>
+                                    <option>$100M+</option>
+                                </select></div>
+                            <div class="sm:col-span-2"><label class="text-[13px] font-medium">Tell us about your claim
+                                    *</label><textarea required rows="4"
+                                    class="mt-1.5 w-full px-3 py-2.5 border border-slate-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-canada-red/30 focus:border-canada-red"
+                                    placeholder="Delay, disruption, variation, contract type, province..."></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="text-[12px] text-slate-500">Protected by solicitor-client privilege when
+                                engaged.</div>
+                            <button
+                                class="h-11 px-7 bg-canada-red text-white font-semibold rounded-sm hover:bg-canada-red-dark shadow-red">Submit
+                                Securely</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-200 border-t-4 border-canada-red">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div>
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-16 h-13 rounded-sm flex items-center justify-center">
+                            <img src="CCC.png" alt="logo">
+                        </div>
+                        <div class="leading-[1.1]">
+                            <div class="font-display font-extrabold text-[13px] tracking-tight text-white">CONSTRUCTION <br> CLAIMS <br> CONSULTANCY</div>
+                        </div>
+                    </a>
+                    <p class="mt-3 text-[14px] max-w-[340px]">Independent Canadian experts in construction claims,
+                        disputes and expert witness services since 1997.</p>
+                </div>
+                <div class="text-[14px]">
+                    <div class="font-semibold text-white mb-2">Quick Links</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-1.5">
+                        <a href="#services" class="hover:text-white">Services</a>
+                        <a href="#process" class="hover:text-white">Process</a>
+                        <a href="#expertise" class="hover:text-white">Expertise</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-10 pt-6 border-t border-white/9 flex flex-col sm:flex-row justify-between gap-4 text-[13px]">
+                <div>© 2025 Construction Claims Consultancy Inc. All rights reserved.
+                </div>
+                <div class="flex gap-4"><a href="#" class="hover:text-white">Privacy</a><a href="#"
+                        class="hover:text-white">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast"
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-5 py-3 rounded-sm shadow-lg opacity-0 pointer-events-none transition-all text-[14px] z-50">
+        PDF sent! Check your email.</div>
+
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Navbar shadow
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) navbar.classList.add('shadow-sm'); else navbar.classList.remove('shadow-sm');
+        });
+
+        // Fade in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Counters
+        document.querySelectorAll('[data-count]').forEach(el => {
+            const target = +el.getAttribute('data-count');
+            let current = 0;
+            const inc = target / 60;
+            const timer = setInterval(() => {
+                current += inc;
+                if (current >= target) { el.textContent = target; clearInterval(timer); }
+                else el.textContent = Math.floor(current);
+            }, 30);
+        });
+
+        // Testimonials
+        const testimonials = [
+            { q: "Highly professional team with deep knowledge of international construction contracts. Their proactive approach helped us avoid costly disputes.", n: "Mark Tremblay", t: "VP Operations, Eastern Contractors Inc.", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80" },
+            { q: "Their detailed forensic delay analysis and clear reporting made a significant difference in our project. Strongly recommended for claims consultancy services.", n: "Sarah Chen", t: "Project Director, West Coast Build", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80" },
+            { q: "Excellent advisory services in dispute resolution and contract management. CCC delivered practical and effective solutions throughout the project lifecycle.", n: "David Okafor", t: "President, Northern Infrastructure", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80" }
+        ];
+        let ti = 0;
+        const tEl = document.getElementById('testimonial');
+        function renderTest() {
+            const t = testimonials[ti];
+            tEl.innerHTML = `<div class="flex gap-1 text-amber-500 mb-4"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><blockquote class="text-[20px] leading-relaxed font-medium text-slate-800">"${t.q}"</blockquote><div class="mt-6 flex items-center gap-3"><img src="${t.img}" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold">${t.n}</div><div class="text-[13px] text-slate-600">${t.t}</div></div></div>`;
+        }
+        function nextTest() { ti = (ti + 1) % testimonials.length; renderTest(); }
+        function prevTest() { ti = (ti - 1 + testimonials.length) % testimonials.length; renderTest(); }
+        setInterval(nextTest, 7000);
+
+        // Form
+        document.getElementById('claimForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            toast('Thank you! A senior claims consultant will call within 24 hours.');
+            e.target.reset();
+        });
+
+        // Toast
+        function toast(msg = 'PDF sent! Check your email.') {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.style.opacity = '1';
+            t.style.pointerEvents = 'auto';
+            t.style.transform = 'translate(-50%, -10px)';
+            setTimeout(() => {
+                t.style.opacity = '0';
+                t.style.pointerEvents = 'none';
+                t.style.transform = 'translate(-50%, 0)';
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
